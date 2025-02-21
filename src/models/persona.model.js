@@ -66,6 +66,9 @@ const personaSchema = mongoose.Schema(
       type: Date,
       default: null,
     },
+    code: {
+      type: String
+    }
   },
   {
     timestamps: true,

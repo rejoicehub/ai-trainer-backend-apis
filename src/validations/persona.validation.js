@@ -13,7 +13,8 @@ const createPersona = {
     apiKey: Joi.string(),
     trainerTitle: Joi.string(),
     trainerDescription: Joi.string(),
-    category_id: Joi.string()
+    category_id: Joi.string(),
+    code: Joi.string()
   }),
 };
 

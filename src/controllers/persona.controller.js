@@ -24,7 +24,8 @@ module.exports = {
         default_replica_id,
         trainerTitle,
         trainerDescription,
-        category_id
+        category_id,
+        code
       } = req.body;
 
       const personaData = {
@@ -64,7 +65,8 @@ module.exports = {
             apiKey: apiKey ?? process.env.TAVUS_API_KEY,
             trainerTitle: trainerTitle,
             trainerDescription: trainerDescription,
-            category_id: category_id
+            category_id: category_id,
+            code: code
           };
 
           createPersona = await PersonaModel.create(persona);
